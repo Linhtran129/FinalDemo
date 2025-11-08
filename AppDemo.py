@@ -26,7 +26,7 @@ i_idx2id = model_data["i_idx2id"]
 # ==============================
 @st.cache_data(show_spinner=True)
 def load_data_from_drive(sample_size=5000):
-    file_id = "1KYY4cLmBEPQFqmwWmdF-WcrP_2l_3X5d"
+    file_id = "1V4cuan8_FUBf2m-Y134P07VjvuSputh5"
     url = f"https://drive.google.com/uc?export=download&id={file_id}"
     local_path = "events.json"
 
@@ -240,4 +240,5 @@ elif st.session_state.page == "Checkout":
             st.session_state.payment_success = False
             st.session_state.page = "Cart"
             st.rerun()
+
 
